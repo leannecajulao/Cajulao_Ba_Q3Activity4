@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exercise4</title>
+</head>
+<body>
+  <script>
+
+    var a = prompt("Enter digit for side 1");
+    var b = prompt("Enter digit for side 2");
+    var c = prompt("Enter digit for side 3");
+
+    function TriangleIdentification(a,b,c){
+      
+      if (isNaN(a) || isNaN(b) || isNaN(c)) {
+        return "Please Enter A Digit.";
+        
+      } else if (a === b && b === c) {
+        return "THE TRIANGLE IS EQUILATERAL";
+      } else if (a === b || b === c || a === c) {
+        return "THE TRIANGLE IS ISOSCELES";
+      } else {
+        return "THE TRIANGLE IS SCALENE";
+      }
+
+    }
+
+    window.alert(TriangleIdentification(a,b,c));
+
+  </script>
+</body>
+</html>
+
